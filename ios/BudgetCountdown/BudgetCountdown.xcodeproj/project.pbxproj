@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		585B2D5A2F9D3E5000CFC8AE /* LinkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 585B2D592F9D3E5000CFC8AE /* LinkKit */; };
+		585B2D622F9D400B00CFC8AE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585B2D612F9D400B00CFC8AE /* WidgetKit.framework */; };
+		585B2D642F9D400B00CFC8AE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585B2D632F9D400B00CFC8AE /* SwiftUI.framework */; };
+		585B2D732F9D400C00CFC8AE /* BudgetWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 585B2D5F2F9D400B00CFC8AE /* BudgetWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		585B2D262F9D3C2500CFC8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585B2D102F9D3C2300CFC8AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585B2D172F9D3C2300CFC8AE;
+			remoteInfo = BudgetCountdown;
+		};
+		585B2D302F9D3C2500CFC8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585B2D102F9D3C2300CFC8AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585B2D172F9D3C2300CFC8AE;
+			remoteInfo = BudgetCountdown;
+		};
+		585B2D712F9D400C00CFC8AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585B2D102F9D3C2300CFC8AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585B2D5E2F9D400B00CFC8AE;
+			remoteInfo = BudgetWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		585B2D782F9D400C00CFC8AE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				585B2D732F9D400C00CFC8AE /* BudgetWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		585B2D182F9D3C2300CFC8AE /* BudgetCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B2D252F9D3C2500CFC8AE /* BudgetCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B2D2F2F9D3C2500CFC8AE /* BudgetCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B2D5F2F9D400B00CFC8AE /* BudgetWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BudgetWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		585B2D612F9D400B00CFC8AE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		585B2D632F9D400B00CFC8AE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		585B2D7F2F9D41A600CFC8AE /* BudgetWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		585B2D742F9D400C00CFC8AE /* Exceptions for "BudgetWidget" folder in "BudgetWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 585B2D5E2F9D400B00CFC8AE /* BudgetWidgetExtension */;
+		};
+		585B2D7D2F9D40A400CFC8AE /* Exceptions for "BudgetCountdown" folder in "BudgetWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/SharedDefaults.swift,
+			);
+			target = 585B2D5E2F9D400B00CFC8AE /* BudgetWidgetExtension */;
+		};
+		585B2D812F9D469F00CFC8AE /* Exceptions for "BudgetCountdown" folder in "BudgetCountdown" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 585B2D172F9D3C2300CFC8AE /* BudgetCountdown */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		585B2D1A2F9D3C2300CFC8AE /* BudgetCountdown */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				585B2D812F9D469F00CFC8AE /* Exceptions for "BudgetCountdown" folder in "BudgetCountdown" target */,
+				585B2D7D2F9D40A400CFC8AE /* Exceptions for "BudgetCountdown" folder in "BudgetWidgetExtension" target */,
+			);
+			path = BudgetCountdown;
+			sourceTree = "<group>";
+		};
+		585B2D282F9D3C2500CFC8AE /* BudgetCountdownTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BudgetCountdownTests;
+			sourceTree = "<group>";
+		};
+		585B2D322F9D3C2500CFC8AE /* BudgetCountdownUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BudgetCountdownUITests;
+			sourceTree = "<group>";
+		};
+		585B2D652F9D400B00CFC8AE /* BudgetWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				585B2D742F9D400C00CFC8AE /* Exceptions for "BudgetWidget" folder in "BudgetWidgetExtension" target */,
+			);
+			path = BudgetWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		585B2D152F9D3C2300CFC8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585B2D5A2F9D3E5000CFC8AE /* LinkKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D222F9D3C2500CFC8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D2C2F9D3C2500CFC8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D5C2F9D400B00CFC8AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585B2D642F9D400B00CFC8AE /* SwiftUI.framework in Frameworks */,
+				585B2D622F9D400B00CFC8AE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		585B2D0F2F9D3C2300CFC8AE = {
+			isa = PBXGroup;
+			children = (
+				585B2D7F2F9D41A600CFC8AE /* BudgetWidgetExtension.entitlements */,
+				585B2D1A2F9D3C2300CFC8AE /* BudgetCountdown */,
+				585B2D282F9D3C2500CFC8AE /* BudgetCountdownTests */,
+				585B2D322F9D3C2500CFC8AE /* BudgetCountdownUITests */,
+				585B2D652F9D400B00CFC8AE /* BudgetWidget */,
+				585B2D602F9D400B00CFC8AE /* Frameworks */,
+				585B2D192F9D3C2300CFC8AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		585B2D192F9D3C2300CFC8AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				585B2D182F9D3C2300CFC8AE /* BudgetCountdown.app */,
+				585B2D252F9D3C2500CFC8AE /* BudgetCountdownTests.xctest */,
+				585B2D2F2F9D3C2500CFC8AE /* BudgetCountdownUITests.xctest */,
+				585B2D5F2F9D400B00CFC8AE /* BudgetWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		585B2D602F9D400B00CFC8AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585B2D612F9D400B00CFC8AE /* WidgetKit.framework */,
+				585B2D632F9D400B00CFC8AE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		585B2D172F9D3C2300CFC8AE /* BudgetCountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B2D392F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdown" */;
+			buildPhases = (
+				585B2D142F9D3C2300CFC8AE /* Sources */,
+				585B2D152F9D3C2300CFC8AE /* Frameworks */,
+				585B2D162F9D3C2300CFC8AE /* Resources */,
+				585B2D782F9D400C00CFC8AE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585B2D722F9D400C00CFC8AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				585B2D1A2F9D3C2300CFC8AE /* BudgetCountdown */,
+			);
+			name = BudgetCountdown;
+			packageProductDependencies = (
+				585B2D592F9D3E5000CFC8AE /* LinkKit */,
+			);
+			productName = BudgetCountdown;
+			productReference = 585B2D182F9D3C2300CFC8AE /* BudgetCountdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		585B2D242F9D3C2500CFC8AE /* BudgetCountdownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B2D3C2F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdownTests" */;
+			buildPhases = (
+				585B2D212F9D3C2500CFC8AE /* Sources */,
+				585B2D222F9D3C2500CFC8AE /* Frameworks */,
+				585B2D232F9D3C2500CFC8AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585B2D272F9D3C2500CFC8AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				585B2D282F9D3C2500CFC8AE /* BudgetCountdownTests */,
+			);
+			name = BudgetCountdownTests;
+			packageProductDependencies = (
+			);
+			productName = BudgetCountdownTests;
+			productReference = 585B2D252F9D3C2500CFC8AE /* BudgetCountdownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		585B2D2E2F9D3C2500CFC8AE /* BudgetCountdownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B2D3F2F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdownUITests" */;
+			buildPhases = (
+				585B2D2B2F9D3C2500CFC8AE /* Sources */,
+				585B2D2C2F9D3C2500CFC8AE /* Frameworks */,
+				585B2D2D2F9D3C2500CFC8AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585B2D312F9D3C2500CFC8AE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				585B2D322F9D3C2500CFC8AE /* BudgetCountdownUITests */,
+			);
+			name = BudgetCountdownUITests;
+			packageProductDependencies = (
+			);
+			productName = BudgetCountdownUITests;
+			productReference = 585B2D2F2F9D3C2500CFC8AE /* BudgetCountdownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		585B2D5E2F9D400B00CFC8AE /* BudgetWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585B2D752F9D400C00CFC8AE /* Build configuration list for PBXNativeTarget "BudgetWidgetExtension" */;
+			buildPhases = (
+				585B2D5B2F9D400B00CFC8AE /* Sources */,
+				585B2D5C2F9D400B00CFC8AE /* Frameworks */,
+				585B2D5D2F9D400B00CFC8AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				585B2D652F9D400B00CFC8AE /* BudgetWidget */,
+			);
+			name = BudgetWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BudgetWidgetExtension;
+			productReference = 585B2D5F2F9D400B00CFC8AE /* BudgetWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		585B2D102F9D3C2300CFC8AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					585B2D172F9D3C2300CFC8AE = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					585B2D242F9D3C2500CFC8AE = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 585B2D172F9D3C2300CFC8AE;
+					};
+					585B2D2E2F9D3C2500CFC8AE = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 585B2D172F9D3C2300CFC8AE;
+					};
+					585B2D5E2F9D400B00CFC8AE = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 585B2D132F9D3C2300CFC8AE /* Build configuration list for PBXProject "BudgetCountdown" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 585B2D0F2F9D3C2300CFC8AE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				585B2D582F9D3E5000CFC8AE /* XCRemoteSwiftPackageReference "plaid-link-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 585B2D192F9D3C2300CFC8AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				585B2D172F9D3C2300CFC8AE /* BudgetCountdown */,
+				585B2D242F9D3C2500CFC8AE /* BudgetCountdownTests */,
+				585B2D2E2F9D3C2500CFC8AE /* BudgetCountdownUITests */,
+				585B2D5E2F9D400B00CFC8AE /* BudgetWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		585B2D162F9D3C2300CFC8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D232F9D3C2500CFC8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D2D2F9D3C2500CFC8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D5D2F9D400B00CFC8AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		585B2D142F9D3C2300CFC8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D212F9D3C2500CFC8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D2B2F9D3C2500CFC8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585B2D5B2F9D400B00CFC8AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		585B2D272F9D3C2500CFC8AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585B2D172F9D3C2300CFC8AE /* BudgetCountdown */;
+			targetProxy = 585B2D262F9D3C2500CFC8AE /* PBXContainerItemProxy */;
+		};
+		585B2D312F9D3C2500CFC8AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585B2D172F9D3C2300CFC8AE /* BudgetCountdown */;
+			targetProxy = 585B2D302F9D3C2500CFC8AE /* PBXContainerItemProxy */;
+		};
+		585B2D722F9D400C00CFC8AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585B2D5E2F9D400B00CFC8AE /* BudgetWidgetExtension */;
+			targetProxy = 585B2D712F9D400C00CFC8AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		585B2D372F9D3C2500CFC8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		585B2D382F9D3C2500CFC8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		585B2D3A2F9D3C2500CFC8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BudgetCountdown/BudgetCountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetCountdown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		585B2D3B2F9D3C2500CFC8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BudgetCountdown/BudgetCountdown.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetCountdown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		585B2D3D2F9D3C2500CFC8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetCountdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BudgetCountdown";
+			};
+			name = Debug;
+		};
+		585B2D3E2F9D3C2500CFC8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudgetCountdown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BudgetCountdown";
+			};
+			name = Release;
+		};
+		585B2D402F9D3C2500CFC8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudgetCountdown;
+			};
+			name = Debug;
+		};
+		585B2D412F9D3C2500CFC8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudgetCountdown;
+			};
+			name = Release;
+		};
+		585B2D762F9D400C00CFC8AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BudgetWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BudgetWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdown.BudgetWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		585B2D772F9D400C00CFC8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = BudgetWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AURX8CHAY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudgetWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BudgetWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggie.BudgetCountdown.BudgetWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		585B2D132F9D3C2300CFC8AE /* Build configuration list for PBXProject "BudgetCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B2D372F9D3C2500CFC8AE /* Debug */,
+				585B2D382F9D3C2500CFC8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B2D392F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B2D3A2F9D3C2500CFC8AE /* Debug */,
+				585B2D3B2F9D3C2500CFC8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B2D3C2F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B2D3D2F9D3C2500CFC8AE /* Debug */,
+				585B2D3E2F9D3C2500CFC8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B2D3F2F9D3C2500CFC8AE /* Build configuration list for PBXNativeTarget "BudgetCountdownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B2D402F9D3C2500CFC8AE /* Debug */,
+				585B2D412F9D3C2500CFC8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585B2D752F9D400C00CFC8AE /* Build configuration list for PBXNativeTarget "BudgetWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585B2D762F9D400C00CFC8AE /* Debug */,
+				585B2D772F9D400C00CFC8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		585B2D582F9D3E5000CFC8AE /* XCRemoteSwiftPackageReference "plaid-link-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/plaid/plaid-link-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		585B2D592F9D3E5000CFC8AE /* LinkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 585B2D582F9D3E5000CFC8AE /* XCRemoteSwiftPackageReference "plaid-link-ios" */;
+			productName = LinkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 585B2D102F9D3C2300CFC8AE /* Project object */;
+}

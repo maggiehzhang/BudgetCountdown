@@ -1,0 +1,20 @@
+# Environment & credentials
+.env
+*.env.local
+
+# Node
+node_modules/
+
+# iOS / Xcode
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
