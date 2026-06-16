@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: budget-countdown-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      # Secrets — set these in the Render dashboard, not in source control.
+      - key: PLAID_CLIENT_ID
+        sync: false
+      - key: PLAID_SECRET
+        sync: false
+      - key: PLAID_ACCESS_TOKEN
+        sync: false
+      # https://<your-service>.onrender.com/oauth-redirect (must match Plaid Dashboard)
+      - key: PLAID_REDIRECT_URI
+        sync: false
+      - key: PLAID_ENV
+        value: production

@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const plaidConfig = new Configuration({
-  basePath: PlaidEnvironments[process.env.PLAID_ENV || 'development'],
+  basePath: PlaidEnvironments[process.env.PLAID_ENV || 'sandbox'],
   baseOptions: {
     headers: {
       'PLAID-CLIENT-ID': process.env.PLAID_CLIENT_ID,
@@ -37,14 +37,19 @@ function formatDate(date) {
 // Step 1: App calls this to get a token to launch Plaid Link
 app.post('/link-token', async (req, res) => {
   try {
-    const response = await plaidClient.linkTokenCreate({
+    const params = {
       user: { client_user_id: 'budget-app-user' },
       client_name: 'Budget Countdown',
       products: [Products.Transactions],
       country_codes: [CountryCode.Us],
       language: 'en',
-      redirect_uri: 'https://abundant-energy-production-f8e2.up.railway.app/oauth-redirect',
-    });
+    };
+    // Required for OAuth banks (e.g. Chase) in production. Must exactly match a
+    // redirect URI registered in the Plaid Dashboard. Omit it in sandbox.
+    if (process.env.PLAID_REDIRECT_URI) {
+      params.redirect_uri = process.env.PLAID_REDIRECT_URI;
+    }
+    const response = await plaidClient.linkTokenCreate(params);
     res.json({ link_token: response.data.link_token });
   } catch (err) {
     console.error('link-token error:', err.response?.data || err.message);
