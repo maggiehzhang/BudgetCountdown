@@ -4,7 +4,7 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @AppStorage("monthlyBudget") private var monthlyBudget: Double = 3660
     @AppStorage("cycleDayStart") private var cycleDayStart: Int = 24
-    @AppStorage("backendURL") private var backendURL: String = "http://localhost:3000"
+    @AppStorage("backendURL") private var backendURL: String = "https://budget-countdown-backend.onrender.com"
 
     @State private var budgetText = ""
     @State private var cycleDayText = ""
@@ -41,7 +41,7 @@ struct SettingsView: View {
                 }
 
                 Section("Backend") {
-                    TextField("https://your-app.railway.app", text: $backendURL)
+                    TextField("https://budget-countdown-backend.onrender.com", text: $backendURL)
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.never)
                     Text("URL of your Node.js backend. Use http://localhost:3000 while developing locally.")

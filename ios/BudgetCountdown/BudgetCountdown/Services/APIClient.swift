@@ -19,7 +19,7 @@ struct TransactionsResponse: Codable {
 @MainActor
 class APIClient: ObservableObject {
     static var baseURL: String {
-        UserDefaults.standard.string(forKey: "backendURL") ?? "https://abundant-energy-production-f8e2.up.railway.app"
+        UserDefaults.standard.string(forKey: "backendURL") ?? "https://budget-countdown-backend.onrender.com"
     }
 
     @Published var isLoading = false

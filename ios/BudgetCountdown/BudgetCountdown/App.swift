@@ -41,7 +41,7 @@ func handleBackgroundRefresh(task: BGAppRefreshTask) {
     scheduleBackgroundRefresh() // reschedule for tomorrow
 
     let fetchTask = Task {
-        let baseURL = UserDefaults.standard.string(forKey: "backendURL") ?? "http://localhost:3000"
+        let baseURL = UserDefaults.standard.string(forKey: "backendURL") ?? "https://budget-countdown-backend.onrender.com"
         guard let url = URL(string: "\(baseURL)/transactions") else {
             task.setTaskCompleted(success: false)
             return
